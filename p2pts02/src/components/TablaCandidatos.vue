@@ -45,8 +45,8 @@ export default {
 </script>
 
 <style scoped>
-.tabla-candidatos { padding: 20px; }
+.tabla-candidatos { padding: 20px; border: 2px solid #5C7CFA; border-radius: 15px; }
 table { width: 100%; border-collapse: collapse; }
-th, td { border: 1px solid #ccc; padding: 10px; text-align: left; }
-th { background-color: #f0f0f0; }
+th, td { border: 1px solid #5C7CFA; padding: 10px; text-align: left; }
+th { background-color: #5C7CFA; color: white; }
 </style>

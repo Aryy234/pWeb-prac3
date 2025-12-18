@@ -69,4 +69,5 @@ export default {
 <style scoped>
 .candidatos-view { max-width: 1200px; margin: 0 auto; }
 h1 { text-align: center; }
+.candidatos-view > * { margin-bottom: 30px; }
 </style>

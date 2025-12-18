@@ -68,8 +68,10 @@ export default {
 </script>
 
 <style scoped>
-.formulario { padding: 20px; border: 1px solid #ccc; }
+.formulario { padding: 20px; border: 2px solid #5C7CFA; border-radius: 15px; }
 .foto { width: 150px; border-radius: 10px; }
 .campo { margin: 10px 0; }
+.campo label { color: #5C7CFA; font-weight: bold; }
+.campo input { border: 1px solid #5C7CFA; padding: 5px; border-radius: 5px; width: 100%; }
 .botones button { margin: 5px; padding: 10px 20px; }
 </style>

@@ -21,7 +21,11 @@
       <p>Intentos: {{ intentos }}/5</p>
       <p>Puntos: {{ puntos }}</p>
       <p v-if="puntos >= 10">HAS GANADO</p>
+      <p v-if="intentos >= 5 && puntos < 10">HAS PERDIDO</p>
     </div>
+
+    <!-- Botón Volver a intentar -->
+    <button v-if="intentos >= 5" @click="reiniciar">Volver a intentar</button>
   </div>
 </template>
 
@@ -74,6 +78,15 @@ export default {
       } else if (coincidencias === 1) {
         this.puntos += 1;
       }
+    },
+    // Reinicia el juego a su estado inicial
+    reiniciar() {
+      this.cuadros.forEach(cuadro => {
+        cuadro.imagen = '';
+        cuadro.respuesta = '';
+      });
+      this.intentos = 0;
+      this.puntos = 0;
     }
   }
 }
