@@ -11,3 +11,4 @@ export const obtenerRespuesta = async () => {
   const respuesta = await axios.get(API_URL);
   return respuesta.data;
 };
+
